@@ -22,7 +22,7 @@
       </div>
       <div class='frisbee-list row justify-content-md-start'>
         <div class='col-sm' *ngFor="let frisbee of frisbeesList[category.key].frisbees">
-          <app-frisbee [frisbee]=frisbee></app-frisbee>
+          <app-frisbee data-testid='app-frisbee' [frisbee]=frisbee></app-frisbee>
         </div>
       </div>
     </div>
