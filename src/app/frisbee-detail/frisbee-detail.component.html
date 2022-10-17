@@ -1,0 +1,52 @@
+<div class='container-fluid col align-items-center'>
+  <div class='row justify-content-md-center'>
+    <div class='col-md-8'>
+      <button [routerLink]="['/']" class="back-btn">Go back</button>
+    </div>
+
+    <div class='col-md-8 frispee-card'>
+      <i class="fa fa-arrow-left"></i>
+      <h1 class='frispee-title'>
+        Infinite Discs
+      </h1>
+      <hr />
+      <div class='row frisbee-details'>
+        <div class='col-sm'>
+          <img class="frisbee-detail-img" src={{frisbeeDeails.image}} />
+        </div>
+        <div class='col-sm'>
+          <h3>Basic Information</h3>
+          <p class="frisbee-description">{{frisbeeDeails.description}}</p>
+          <h3 class="frispee-details">Details</h3>
+          <div class="col">
+            <div class="d-flex flex-row">
+              <p class="detail-heading">Price</p>
+              <p>${{frisbeeDeails.price/100}}</p>
+            </div>
+            <div class="d-flex flex-row frispee-detail-wrapper">
+              <p class="detail-heading">speed</p>
+              <p>{{frisbeeDeails.speed}}</p>
+            </div>
+            <div class="d-flex flex-row frispee-detail-wrapper">
+              <p class="detail-heading">glide</p>
+              <p>{{frisbeeDeails.glide}}</p>
+            </div>
+            <div class="d-flex flex-row frispee-detail-wrapper">
+              <p class="detail-heading">turn</p>
+              <p>{{frisbeeDeails.turn}}</p>
+            </div>
+            <div class="d-flex flex-row frispee-detail-wrapper">
+              <p class="detail-heading">fade</p>
+              <p>{{frisbeeDeails.fade}}</p>
+            </div>
+            <div class="d-flex flex-row frispee-detail-wrapper">
+              <p class="detail-heading">rating</p>
+              <p>{{frisbeeDeails.rating}}</p>
+            </div>
+          </div>
+          <button class="buy-btn">Buy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -10,9 +10,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FrisbeeListComponent } from './frisbee-list/frisbee-list.component';
 import { FrisbeeComponent } from './frisbee/frisbee.component';
+import { FrisbeeDetailComponent } from './frisbee-detail/frisbee-detail.component';
 
 @NgModule({
-  declarations: [AppComponent, FrisbeeListComponent, FrisbeeComponent],
+  declarations: [AppComponent, FrisbeeListComponent, FrisbeeComponent, FrisbeeDetailComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

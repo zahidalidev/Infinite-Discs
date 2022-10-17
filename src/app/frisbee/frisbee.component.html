@@ -1,4 +1,3 @@
-<div class='frisbee'>
-  <img src={{frisbee.image}} resize="contain"
-    class="frisbee-img" />
+<div [routerLink]="['/frisbees', frisbee.id]" class='frisbee'>
+  <img src={{frisbee.image}} resize="contain" class="frisbee-img" />
 </div>
