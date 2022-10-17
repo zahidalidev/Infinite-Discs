@@ -40,4 +40,13 @@ describe('FrisbeeListComponent', () => {
     const h2 = fixture.debugElement.query(By.css('[data-testid="app-frisbee"]'))
     expect(h2).toBeTruthy()
   });
+
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(FrisbeeListComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Infinite Discs'
+    );
+  });
 });
