@@ -20,9 +20,9 @@
       <div class='category-box'>
         <h6 class='category-heading'>{{category.key}}</h6>
       </div>
-      <div class='frisbee-list row'>
-        <div class='col-sm' *ngFor="let item of frisbeesList[category.key].frisbees | keyvalue">
-          <app-frisbee ></app-frisbee>
+      <div class='frisbee-list row justify-content-md-start'>
+        <div class='col-sm' *ngFor="let frisbee of frisbeesList[category.key].frisbees">
+          <app-frisbee [frisbee]=frisbee ></app-frisbee>
         </div>
       </div>
     </div>

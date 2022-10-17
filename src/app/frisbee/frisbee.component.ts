@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Frisbee } from '../frisbee';
 
 @Component({
   selector: 'app-frisbee',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./frisbee.component.css']
 })
 export class FrisbeeComponent implements OnInit {
+  @Input() frisbee: Frisbee;
 
   constructor() { }
 

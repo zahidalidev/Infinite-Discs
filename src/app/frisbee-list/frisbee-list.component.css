@@ -18,6 +18,7 @@
 .category-heading {
   font-weight: 500;
   color: #fff;
+  text-transform: capitalize;
 }
 
 .frisbee-list {
