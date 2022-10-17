@@ -42,6 +42,5 @@ export class FrisbeeListComponent implements OnInit {
         frisbee,
       ]
     })
-
   }
 }

@@ -1,27 +1,74 @@
-# Infinitediscs
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+# Infinite Discs
 
-## Development server
+## Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+For development, you will only need Node.js installed on your environment.
+And please use the appropriate [Editorconfig](http://editorconfig.org/) plugin for your Editor (not mandatory).
 
-## Code scaffolding
+### Node
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[Node](http://nodejs.org/) is really easy to install & now include [NPM](https://npmjs.org/).
+You should be able to run the following command after the installation procedure
+below.
 
-## Build
+    $ node --version
+    v14.20.0
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    $ npm --version
+    v8.18.0
 
-## Running unit tests
+#### Node installation on OS X
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+You will need to use a Terminal. On OS X, you can find the default terminal in
+`/Applications/Utilities/Terminal.app`.
 
-## Running end-to-end tests
+Please install [Homebrew](http://brew.sh/) if it's not already done with the following command.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
-## Further help
+If everything when fine, you should run
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    brew install node
+
+#### Node installation on Linux
+
+    sudo apt-get install python-software-properties
+    sudo add-apt-repository ppa:chris-lea/node.js
+    sudo apt-get update
+    sudo apt-get install nodejs
+
+
+## Install
+
+    $ npm install
+
+
+## Start & watch
+
+    $ ng serve --open
+
+
+## Languages & tools
+
+### JavaScript
+- [Angular](https://angular.io/) is used for UI.
+- [prettier](https://prettier.io/) for maintaining code quality in project.
+
+### CSS
+- [CSS](https://sass-lang.com/) is used for styling.
+- [bootstrap](https://sass-lang.com/) is used make responsive UI.
+
+## Notes
+- Implemented a frisbee list component.
+- Implemented a frisbee detail component.
+- Added Basic Test Cases for components.
+
+## Future Work
+- We can add proper Authentication Process where user can signup/Login with email and password.
+- We can Add Cart page.
+- We can Add checkout page.
+- We can add detailed test cases.
+- We can add Profile page.
+- We can add profile CRUD.
+
