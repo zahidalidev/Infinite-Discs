@@ -1,8 +1,8 @@
 <div class='frisbee'>
-  <img src={{frisbee.image}} resize='contain' class='frisbee-img' />
-  <h6 class='frisbee-card-title'>{{frisbee.name}}</h6>
+  <img src={{frisbee?.image}} resize='contain' class='frisbee-img' />
+  <h6 class='frisbee-card-title'>{{frisbee?.name}}</h6>
   <div class='d-flex flex-row frisbee-card-details'>
-    <h6 class='frisbee-card-title'>Price ${{frisbee.price/100}}</h6>
-    <a [routerLink]="['/frisbees', frisbee.id]" class='detail-btn'>Details</a>
+    <h6 class='frisbee-card-title'>Price ${{frisbee?.price/100}}</h6>
+    <a [routerLink]="['/frisbees', frisbee?.id]" class='detail-btn'>Details</a>
   </div>
 </div>

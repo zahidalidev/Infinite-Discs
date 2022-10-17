@@ -1,5 +1,5 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FrisbeeListComponent } from './frisbee-list.component';
 
@@ -42,8 +42,6 @@ describe('FrisbeeListComponent', () => {
   });
 
   it('should render title', () => {
-    const fixture = TestBed.createComponent(FrisbeeListComponent);
-    fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
       'Infinite Discs'
