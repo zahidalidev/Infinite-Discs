@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { FrisbeeListComponent } from './frisbee-list/frisbee-list.component';
+
+const routes: Routes = [
+  { path: 'frisbees', component: FrisbeeListComponent },
+  // { path: "frisbees/:id", component: FrisbeeDetailComponent },
+  { path: '**', redirectTo: 'frisbees' },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

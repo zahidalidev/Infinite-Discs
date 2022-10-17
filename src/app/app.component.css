@@ -1,0 +1,12 @@
+.toolbar {
+  height: 60px;
+  align-items: center;
+  background-color: #0b2947;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar-heading {
+  margin: 1rem;
+  font-weight: 400;
+}

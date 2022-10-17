@@ -1,0 +1,27 @@
+.main-heading {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.category-box {
+  display: flex;
+  margin-top: 2rem;
+  width: 20rem;
+  height: 2.5rem;
+  background-color: #0b2947;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.category-heading {
+  font-weight: 500;
+  color: #fff;
+}
+
+.frisbee-list {
+  margin-top: 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
