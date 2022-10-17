@@ -1,5 +1,5 @@
 <div class='container-fluid col align-items-center'>
-  <div class="row justify-content-md-center">
+  <div class='row justify-content-md-center'>
     <div class='col-md-10'>
       <h1 class='main-heading'>
         Infinite Discs
@@ -15,32 +15,14 @@
       </p>
     </div>
   </div>
-  <div class="row justify-content-md-center">
-    <div class='col-md-10 align-items-start justify-content-start'>
+  <div class='row justify-content-md-center'>
+    <div *ngFor="let category of frisbeesList | keyvalue" class='col-md-10 align-items-start justify-content-start'>
       <div class='category-box'>
-        <h6 class='category-heading'>Distance Drivers</h6>
+        <h6 class='category-heading'>{{category.key}}</h6>
       </div>
       <div class='frisbee-list row'>
-        <div class="col-sm" >
-          <app-frisbee></app-frisbee>
-        </div>
-        <div class="col-sm" >
-          <app-frisbee></app-frisbee>
-        </div>
-        <div class="col-sm" >
-          <app-frisbee></app-frisbee>
-        </div>
-        <div class="col-sm" >
-          <app-frisbee></app-frisbee>
-        </div>
-        <div class="col-sm" >
-          <app-frisbee></app-frisbee>
-        </div>
-        <div class="col-sm" >
-          <app-frisbee></app-frisbee>
-        </div>
-        <div class="col-sm" >
-          <app-frisbee></app-frisbee>
+        <div class='col-sm' *ngFor="let item of frisbeesList[category.key].frisbees | keyvalue">
+          <app-frisbee ></app-frisbee>
         </div>
       </div>
     </div>
