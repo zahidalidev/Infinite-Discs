@@ -53,11 +53,11 @@ If everything when fine, you should run
 
 ### JavaScript
 - [Angular](https://angular.io/) is used for UI.
-- [prettier](https://prettier.io/) for maintaining code quality in project.
+- [Prettier](https://prettier.io/) for maintaining code quality in project.
 
 ### CSS
 - [CSS](https://sass-lang.com/) is used for styling.
-- [bootstrap](https://sass-lang.com/) is used make responsive UI.
+- [Bootstrap](https://sass-lang.com/) is used make responsive UI.
 
 ## Notes
 - Implemented a frisbee list component.
