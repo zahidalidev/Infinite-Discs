@@ -274,7 +274,6 @@ const data: Frisbee[] = [
 @Injectable({
   providedIn: 'root',
 })
-
 export class FrisbeeService {
   loadFrisbeeData(): Observable<Frisbee[]> {
     return of(data);

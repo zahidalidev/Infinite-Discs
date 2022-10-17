@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 import {
   NgbPaginationModule,
   NgbAlertModule,
@@ -13,7 +13,12 @@ import { FrisbeeComponent } from './frisbee/frisbee.component';
 import { FrisbeeDetailComponent } from './frisbee-detail/frisbee-detail.component';
 
 @NgModule({
-  declarations: [AppComponent, FrisbeeListComponent, FrisbeeComponent, FrisbeeDetailComponent],
+  declarations: [
+    AppComponent,
+    FrisbeeListComponent,
+    FrisbeeComponent,
+    FrisbeeDetailComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

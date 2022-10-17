@@ -7,7 +7,7 @@ export interface Frisbee {
   turn: number;
   fade: number;
   rating: number;
-  category: "distance" | "fairway" | "midrange" | "putter";
+  category: 'distance' | 'fairway' | 'midrange' | 'putter';
   image: string;
   price: number;
 }
