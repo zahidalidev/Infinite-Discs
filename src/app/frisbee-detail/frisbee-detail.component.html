@@ -11,36 +11,36 @@
       <hr />
       <div class='row frisbee-details'>
         <div class='col-sm'>
-          <img class='frisbee-detail-img' src={{frisbeeDeails.image}} />
+          <img class='frisbee-detail-img' src={{frisbeeDeails?.image}} />
         </div>
         <div class='col-sm'>
           <h3 class='frisbee-details' >Basic Information</h3>
-          <p class='frisbee-description'>{{frisbeeDeails.description}}</p>
+          <p class='frisbee-description'>{{frisbeeDeails?.description}}</p>
           <h3 class='frispee-details'>Details</h3>
           <div class='col'>
             <div class='d-flex flex-row'>
               <p class='detail-heading'>Price</p>
-              <p>${{frisbeeDeails.price/100}}</p>
+              <p>${{frisbeeDeails?.price/100}}</p>
             </div>
             <div class='d-flex flex-row frispee-detail-wrapper'>
               <p class='detail-heading'>speed</p>
-              <p>{{frisbeeDeails.speed}}</p>
+              <p>{{frisbeeDeails?.speed}}</p>
             </div>
             <div class='d-flex flex-row frispee-detail-wrapper'>
               <p class='detail-heading'>glide</p>
-              <p>{{frisbeeDeails.glide}}</p>
+              <p>{{frisbeeDeails?.glide}}</p>
             </div>
             <div class='d-flex flex-row frispee-detail-wrapper'>
               <p class='detail-heading'>turn</p>
-              <p>{{frisbeeDeails.turn}}</p>
+              <p>{{frisbeeDeails?.turn}}</p>
             </div>
             <div class='d-flex flex-row frispee-detail-wrapper'>
               <p class='detail-heading'>fade</p>
-              <p>{{frisbeeDeails.fade}}</p>
+              <p>{{frisbeeDeails?.fade}}</p>
             </div>
             <div class='d-flex flex-row frispee-detail-wrapper'>
               <p class='detail-heading'>rating</p>
-              <p>{{frisbeeDeails.rating}}</p>
+              <p>{{frisbeeDeails?.rating}}</p>
             </div>
           </div>
           <button class='buy-btn'>Buy</button>

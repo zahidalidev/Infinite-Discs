@@ -1,6 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core'
 
-import { Frisbee } from '../frisbee';
+import { Frisbee } from '../frisbee'
 
 @Component({
   selector: 'app-frisbee',
@@ -8,6 +8,6 @@ import { Frisbee } from '../frisbee';
   styleUrls: ['./frisbee.component.css'],
 })
 export class FrisbeeComponent implements OnInit {
-  @Input() frisbee: Frisbee;
+  @Input() frisbee: Frisbee
   ngOnInit(): void {}
 }

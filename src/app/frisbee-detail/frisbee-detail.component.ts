@@ -1,8 +1,8 @@
-import { ActivatedRoute } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router'
+import { Component, OnInit } from '@angular/core'
 
-import { FrisbeeService } from '../frisbee.service';
-import { Frisbee } from '../frisbee';
+import { FrisbeeService } from '../frisbee.service'
+import { Frisbee } from '../frisbee'
 
 @Component({
   selector: 'app-frisbee-detail',
@@ -10,15 +10,14 @@ import { Frisbee } from '../frisbee';
   styleUrls: ['./frisbee-detail.component.css'],
 })
 export class FrisbeeDetailComponent implements OnInit {
-  frisbeeDeails: Frisbee;
+  frisbeeService = new FrisbeeService()
+  frisbeeDeails: Frisbee
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    let id = this.route.snapshot.params.id;
-    const frisbeeService = new FrisbeeService();
-    frisbeeService.loadFrisbee(id).subscribe((frisbee) => {
-      this.frisbeeDeails = frisbee;
-    });
+    this.frisbeeService.loadFrisbee(this.route.snapshot.params.id).subscribe((frisbee) => {
+      this.frisbeeDeails = frisbee
+    })
   }
 }

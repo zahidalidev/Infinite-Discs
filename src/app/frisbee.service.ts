@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { Frisbee } from './frisbee';
+import { Injectable } from '@angular/core'
+import { Observable, of } from 'rxjs'
+import { Frisbee } from './frisbee'
 
 const data: Frisbee[] = [
   {
@@ -269,19 +269,19 @@ const data: Frisbee[] = [
     image:
       'https://infinitediscs.com/Inf_Uploads/Disc_Images/DI_2bb56f-7ca9.JPG',
   },
-];
+]
 
 @Injectable({
   providedIn: 'root',
 })
 export class FrisbeeService {
   loadFrisbeeData(): Observable<Frisbee[]> {
-    return of(data);
+    return of(data)
   }
 
   loadFrisbee(id: string): Observable<Frisbee> {
-    const idNumber = parseInt(id, 10);
-    const frisbee = data.find((f) => f.id === idNumber);
-    return of(frisbee);
+    const idNumber = parseInt(id, 10)
+    const frisbee = data.find((f) => f.id === idNumber)
+    return of(frisbee)
   }
 }

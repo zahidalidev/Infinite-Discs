@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
-import { Frisbee } from '../frisbee';
-import { FrisbeeService } from '../frisbee.service';
+import { Frisbee } from '../frisbee'
+import { FrisbeeService } from '../frisbee.service'
 
 @Component({
   selector: 'app-frisbee-list',
@@ -9,6 +9,8 @@ import { FrisbeeService } from '../frisbee.service';
   styleUrls: ['./frisbee-list.component.css'],
 })
 export class FrisbeeListComponent implements OnInit {
+  mockData: Frisbee[]
+  frisbeeService = new FrisbeeService()
   frisbeesList = {
     distance: {
       name: '',
@@ -26,23 +28,20 @@ export class FrisbeeListComponent implements OnInit {
       name: '',
       frisbees: [],
     },
-  };
+  }
 
   ngOnInit(): void {
-    const frisbeeService = new FrisbeeService();
-    let result: Frisbee[];
-    frisbeeService.loadFrisbeeData().subscribe((frisbee) => {
-      result = frisbee;
-    });
+    this.frisbeeService.loadFrisbeeData().subscribe((frisbee) => {
+      this.mockData = frisbee
+    })
 
-    result.forEach((frisbee) => {
-      this.frisbeesList[frisbee.category].name = frisbee.category;
+    this.mockData.forEach((frisbee) => {
+      this.frisbeesList[frisbee.category].name = frisbee.category
       this.frisbeesList[frisbee.category].frisbees = [
         ...this.frisbeesList[frisbee.category].frisbees,
         frisbee,
-      ];
-    });
+      ]
+    })
 
-    console.log(this.frisbeesList);
   }
 }
