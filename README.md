@@ -48,6 +48,10 @@ If everything when fine, you should run
 
     $ ng serve --open
 
+## Run test cases
+
+    $ ng test
+
 
 ## Languages & tools
 
