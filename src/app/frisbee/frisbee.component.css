@@ -1,15 +1,31 @@
 .frisbee {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 13rem;
-  height: 13rem;
+  height: 15rem;
   border-radius: 10px;
   margin: 1rem;
-  cursor: pointer;
 }
 
 .frisbee-img {
   width: 13rem;
-  height: 13rem;
+  height: 11rem;
   object-fit: cover;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.frisbee-card-title {
+  margin-left: 1rem;
+}
+
+.frisbee-card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -0.4rem;
+}
+
+.detail-btn {
+  color: #0b2947;
+  margin-right: 1rem;
 }
